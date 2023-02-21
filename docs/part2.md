@@ -72,7 +72,7 @@ Here you can quickly and easily find information for each server, such as: _host
 
 Let's now click on the server you just created to get more information about it.
 
-![](images/part2/7-manage-server.png)
+![](images/part2/7-manage-servers.png)
 
 On this page you can do several post-provisioning tasks such as:
 
