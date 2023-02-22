@@ -32,15 +32,15 @@ Choose an **operating system**. We recommend **Ubuntu 20.04 LTS**.
 
 ![](images/part2/4-os.png)
 
-### 2. Configure your server's cloud init part
+### 2. Configure your server with clout init
 
-Under the **Select number of servers** option, click on the **Optional Settings** part, and then the **User data** tab.
+Under *Select number of servers* give your server a unique hostname. Then click on **Optional Settings**, and then the **User data** tab.
 
 ![](images/part2/5-cloud-config.png)
 
 Copy and paste the snippet of code below into the text box.
 
-```yaml title=""
+```yaml
 #cloud-config
 
 runcmd:
@@ -92,7 +92,7 @@ Click on the **Network** tab and find the public IP address.
 
 Launch a browser and navigate to the following URL:
 
-``` title=""
+```
 http://<ip-address>:31000
 ```
 
