@@ -12,13 +12,13 @@ Navigate back to the **On Demand** section that we used in the previous part and
 * Choose a server type, use  `c3.small.x86` or `m3.small.x86`.
 * Choose an operating system, use **Ubuntu 20.04 LTS**.
 
-Under the **Select number of servers** option, click on the **Optional Settings** part, and then the **User data** tab.
+Under *Select number of servers* give your server a unique hostname. Then click on **Optional Settings**, and then the **User data** tab.
 
 ![](images/part3/1-cloud-config.png)
 
 Copy and paste the snippet of code below into the text box.
 
-```yaml title=""
+```yaml
 #cloud-config
 
 # This cloud-init file is intended to provide a "no-code" way of deploying
@@ -166,7 +166,7 @@ From the left navigation, click on **Manage Servers**, it's under the **Bare met
 
 Launch a browser and navigate to the following URL:
 
-``` title=""
+```
 http://<ip-address>
 ```
 

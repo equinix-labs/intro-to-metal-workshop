@@ -60,7 +60,6 @@ markdown_extensions:
   - pymdownx.critic
   - pymdownx.highlight:
       anchor_linenums: true
-      linenums: true
       auto_title: true
   - pymdownx.superfences
   - pymdownx.keys
