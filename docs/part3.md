@@ -176,7 +176,19 @@ You should now be presented with a running application. In this case, the app ru
 
 ### 3. Use Smoke Ping to find your servers best and worst latency
 
-TBD
+The Smoke Ping application is constantly sending packets to multiple well known endpoints around the world and tracking how long the response takes.
+
+1. Take a look at the **global_metal_routers** section to see the average latency to other Equinix Metal endpoints. 
+1. Take a look at the **global_aws_endpoints** section to see the average latency for AWS endpoints.
+1. Take a look at the **global_gcp_endpoints** section to see the average latency for GCP endpoints.
+
+!!! question "What does your latency look like?"
+
+    If you provionsed a bare metal server in North America your latency should look like this:
+
+    * Equinix Metal endpoints: 10 - 100 ms
+    * AWS endpoints: 50 - 300 ms
+    * GCP endpoints: 100 - 600 ms
 
 ### 4. Clean up any resources
 

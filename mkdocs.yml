@@ -33,6 +33,7 @@ theme:
     - navigation.top
     - search.highlight
     - navigation.footer
+    - content.code.copy
 
 extra:
   social:

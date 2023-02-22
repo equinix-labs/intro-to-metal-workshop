@@ -1,6 +1,7 @@
-/* :root {
-    --md-primary-fg-color: #ff0000;
-} */
+:root {
+    --md-primary-fg-color: #ED1C24;
+    /* Gray HEX #707073 */
+}
 
 img {
     height: auto;
@@ -9,3 +10,4 @@ img {
     transition: transform ease-in-out 0.3s;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
