@@ -60,9 +60,7 @@ Review your settings and click **Deploy Now** at the bottom of the page.
 
 !!! info
 
-    This example uses Kubernetes to deploy the sample application. Specifically, it uses [k3s](https://k3s.io/), a lightweight Kubernetes distribution. Jokes about Kubernetes aside, it has become the defacto approach to deploying cloud native applications.
-
-    ![](images/part2/dilbert.jpg)
+    This example uses Kubernetes to deploy the sample application. Specifically, it uses [k3s](https://k3s.io/), a lightweight Kubernetes distribution. Kubernetes has quickly become the defacto approach to deploying cloud native applications.
 
 ### 3. View server details
 
