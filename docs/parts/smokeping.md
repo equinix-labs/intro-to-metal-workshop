@@ -14,7 +14,7 @@ Navigate back to the **On Demand** section that we used in the previous part and
 
 Under *Select number of servers* give your server a unique hostname. Then click on **Optional Settings**, and then the **User data** tab.
 
-![](images/part3/1-cloud-config.png)
+![](../images/part3/1-cloud-config.png)
 
 Copy and paste the snippet of code below into the text box.
 
@@ -162,7 +162,7 @@ Review your settings and click **Deploy Now** at the bottom of the page.
 
 From the left navigation, click on **Manage Servers**, it's under the **Bare metal servers** menu. Find the IP address of the server you just provisioned.
 
-![](images/part2/7-manage-servers.png)
+![](../images/part2/7-manage-servers.png)
 
 Launch a browser and navigate to the following URL:
 
@@ -172,7 +172,7 @@ http://<ip-address>
 
 You should now be presented with a running application. In this case, the app running is called Smoke Ping, a tool used to measure latency.
 
-![](images/part3/3-smoke-ping.png)
+![](../images/part3/3-smoke-ping.png)
 
 ### 3. Use Smoke Ping to find your servers best and worst latency
 
@@ -181,6 +181,7 @@ The Smoke Ping application is constantly sending packets to multiple well known 
 1. Take a look at the **global_metal_routers** section to see the average latency to other Equinix Metal endpoints. 
 1. Take a look at the **global_aws_endpoints** section to see the average latency for AWS endpoints.
 1. Take a look at the **global_gcp_endpoints** section to see the average latency for GCP endpoints.
+1. Take a look at the **random_endpoints** section to see average latency for Cloudflare (1.1.1.1) and Google (8.8.8.8)
 
 !!! question "What does your latency look like?"
 
@@ -189,12 +190,13 @@ The Smoke Ping application is constantly sending packets to multiple well known 
     * Equinix Metal endpoints: 10 - 100 ms
     * AWS endpoints: 50 - 300 ms
     * GCP endpoints: 100 - 600 ms
+    * Cloudflare and Google: <1 ms
 
 ### 4. Clean up any resources
 
 When you've wrapped up this part, don't forget to delete your server.
 
-![](images/part2/11-delete.png)
+![](../images/part2/11-delete.png)
 
 ## Discussion
 

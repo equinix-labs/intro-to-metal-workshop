@@ -2,17 +2,21 @@
 
 In this part we'll begin to set up a bare metal server. We'll cover options such as metro locations, server types, and operating system choice.
 
+!!! example "First time seeing the Equinix console?"
+
+    If this is your first time in the Equinix console take a few mintues to familiarize yourself with our navigation menu.
+
 ## Steps
 
 ### 1. Choose your server metro, type, and operating system
 
 From the navigation menu on the left, under the **Bare metal servers** option, click on **On demand**.
 
-![](images/part2/1-on-demand.png)
+![](../images/part2/1-on-demand.png)
 
 Choose a **metro**. We suggest the **Dallas** metro.
 
-![](images/part2/2-metro.png)
+![](../images/part2/2-metro.png)
 
 !!! note "Did you know...?"
 
@@ -20,7 +24,7 @@ Choose a **metro**. We suggest the **Dallas** metro.
 
 Choose a **server**. For our workshop, let's go with a `c3.small.x86` or `m3.small.x86` instance.
 
-![](images/part2/3-server.png)
+![](../images/part2/3-server.png)
 
 !!! question "Open discussion"
 
@@ -30,13 +34,13 @@ Choose a **server**. For our workshop, let's go with a `c3.small.x86` or `m3.sma
 
 Choose an **operating system**. We recommend **Ubuntu 20.04 LTS**.
 
-![](images/part2/4-os.png)
+![](../images/part2/4-os.png)
 
 ### 2. Configure your server with clout init
 
 Under *Select number of servers* give your server a unique hostname. Then click on **Optional Settings**, and then the **User data** tab.
 
-![](images/part2/5-cloud-config.png)
+![](../images/part2/5-cloud-config.png)
 
 Copy and paste the snippet of code below into the text box.
 
@@ -56,11 +60,11 @@ runcmd:
 
 Review your settings and click **Deploy Now** at the bottom of the page.
 
-![](images/part2/6-deploy-now.png)
+![](../images/part2/6-deploy-now.png)
 
 !!! info
 
-    This example uses Kubernetes to deploy the sample application. Specifically, it uses [k3s](https://k3s.io/), a lightweight Kubernetes distribution. Kubernetes has quickly become the defacto approach to deploying cloud native applications.
+    This example uses Kubernetes to deploy the sample application. Specifically, it uses [k3s](https://k3s.io/), a lightweight Kubernetes distribution. Kubernetes has quickly become the defacto approach for deploying cloud native applications.
 
 ### 3. View server details
 
@@ -70,7 +74,7 @@ Here you can quickly and easily find information for each server, such as: _host
 
 Let's now click on the server you just created to get more information about it.
 
-![](images/part2/7-manage-servers.png)
+![](../images/part2/7-manage-servers.png)
 
 On this page you can do several post-provisioning tasks such as:
 
@@ -80,13 +84,13 @@ On this page you can do several post-provisioning tasks such as:
 
 Flip through a few sections to familiarize yourself with the overview page.
 
-![](images/part2/8-view-server.png)
+![](../images/part2/8-view-server.png)
 
 ### 4. Verify the application is running
 
 Click on the **Network** tab and find the public IP address.
 
-![](images/part2/9-get-ip.png)
+![](../images/part2/9-get-ip.png)
 
 Launch a browser and navigate to the following URL:
 
@@ -96,7 +100,7 @@ http://<ip-address>:31000
 
 You should now be presented with a running application. In this case, the app running is called Reactle, a clone of the popular game, Wordle.
 
-![](images/part2/10-wordle.png)
+![](../images/part2/10-wordle.png)
 
 !!! example "Can't access the application?"
 
@@ -106,7 +110,7 @@ You should now be presented with a running application. In this case, the app ru
 
 When you've wrapped up this part, don't forget to delete your server.
 
-![](images/part2/11-delete.png)
+![](../images/part2/11-delete.png)
 
 ## Discussion
 

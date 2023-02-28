@@ -7,6 +7,17 @@ edit_uri: blob/main/docs
 extra_css:
   - stylesheets/extra.css
 
+nav:
+  - Introduction: index.md
+
+  - Parts:
+      - Setup an Account: parts/signup.md
+      - Deploy Reactle with Kubernetes: parts/reactle.md
+      - Investigate latency with SmokePing: parts/smokeping.md
+
+  - Conclusion: parts/conclusion.md
+
+
 theme:
   name: material
 
@@ -34,6 +45,7 @@ theme:
     - search.highlight
     - navigation.footer
     - content.code.copy
+    - navigation.expand
 
 extra:
   social:
