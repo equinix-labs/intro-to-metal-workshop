@@ -1,4 +1,4 @@
-# Part 2: Provision a bare metal server and deploy Reactle with Kubernetes
+# Part 2: Provision a bare metal server and deploy Wordpress with Kubernetes
 
 In this part we'll begin to set up a bare metal server. We'll cover options such as metro locations, server types, and operating system choice.
 
@@ -50,7 +50,7 @@ Copy and paste the snippet of code below into the text box.
 runcmd:
   - curl -sfL https://get.k3s.io | sh -
   - sleep 20
-  - kubectl apply -f https://raw.githubusercontent.com/stevemar/metal-code-snippets/main/yaml/reactle.yaml
+  - kubectl apply -f https://github.com/stevemar/metal-code-snippets/blob/main/yaml/wordpress.yaml
 ```
 
 !!! question "Open discussion"
@@ -88,23 +88,27 @@ Flip through a few sections to familiarize yourself with the overview page.
 
 ### 4. Verify the application is running
 
-Click on the **Network** tab and find the public IP address.
+Click on the **Network** tab and find the public IP address. Copy that IP address. 
 
 ![](../images/part2/9-get-ip.png)
 
 Launch a browser and navigate to the following URL:
 
 ```
-http://<ip-address>:31000
+http://<ip-address>:30001
 ```
 
-You should now be presented with a running application. In this case, the app running is called Reactle, a clone of the popular game, Wordle.
+You should now be presented with a running application. In this case, the app running is called Wordpress, a popular tool for building websites and blogs.
 
-![](../images/part2/10-wordle.png)
+![](../images/part2/10-wordpress.png)
+
+Congrats - you just deployed an online website using bare metal and Kubernetes.
+
+> NOTE: every `www.URL.com` is actually a number like `139.178.87.49` but we use domain registrars because words are easier to remember than numbers.
 
 !!! example "Can't access the application?"
 
-    If you're unable to access the applicaiton due to network security, try using a personal device, like a phone.
+    If you're unable to access the application due to network security, try using a personal device, like a phone.
 
 ### 5. Clean up any resources
 
