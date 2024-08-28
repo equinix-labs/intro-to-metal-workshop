@@ -50,7 +50,7 @@ Copy and paste the snippet of code below into the text box.
 runcmd:
   - curl -sfL https://get.k3s.io | sh -
   - sleep 20
-  - kubectl apply -f https://raw.githubusercontent.com/stevemar/react-wordle/main/reactle-kube-deploy.yaml
+  - kubectl apply -f https://raw.githubusercontent.com/stevemar/metal-code-snippets/main/yaml/reactle.yaml
 ```
 
 !!! question "Open discussion"
