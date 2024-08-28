@@ -50,7 +50,7 @@ Copy and paste the snippet of code below into the text box.
 runcmd:
   - curl -sfL https://get.k3s.io | sh -
   - sleep 20
-  - kubectl apply -f https://github.com/stevemar/metal-code-snippets/blob/main/yaml/wordpress.yaml
+  - kubectl apply -f https://raw.githubusercontent.com/stevemar/metal-code-snippets/main/yaml/wordpress.yaml
 ```
 
 !!! question "Open discussion"
