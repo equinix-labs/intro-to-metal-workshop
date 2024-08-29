@@ -19,5 +19,5 @@ This workshop is split into three parts:
 | Part | Title | Duration |
 | - | - | - |
 | 1 | Setup an Equinix Metal user account | 10 minutes |
-| 2 | Provision a bare metal server and deploy Reactle with Kubernetes | 15 minutes |
+| 2 | Provision a bare metal server and deploy Wordpress with Kubernetes | 15 minutes |
 | 3 | Investigate latency on Equinix Metal with SmokePing | 15 minutes |

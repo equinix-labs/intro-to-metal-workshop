@@ -12,7 +12,7 @@ nav:
 
   - Parts:
       - Setup an Account: parts/signup.md
-      - Deploy Reactle with Kubernetes: parts/reactle.md
+      - Deploy Wordpress with Kubernetes: parts/wordpress.md
       - Investigate latency with SmokePing: parts/smokeping.md
 
   - Conclusion: parts/conclusion.md
