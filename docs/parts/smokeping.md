@@ -174,6 +174,9 @@ You should now be presented with a running application. In this case, the app ru
 
 ![](../images/part3/3-smoke-ping.png)
 
+> [!NOTE]
+> Smoke Ping takes up to 4 minutes to install _after_ the server is fully provisioned. As a result, going to the IP Addrress will return nothing for up to 4 minutes.
+
 ### 3. Use Smoke Ping to find your servers best and worst latency
 
 The Smoke Ping application is constantly sending packets to multiple well known endpoints around the world and tracking how long the response takes.
